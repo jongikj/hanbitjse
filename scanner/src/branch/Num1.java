@@ -54,23 +54,23 @@ public class Num1 {
 
 		if (score1 > score2 && score1 > score3) {
 			if(score2 > score3){
-				System.out.println("1등 : " + name1 + " 평균점수 : " + score1 +"\n2등 : "  + name2 + " 평균점수 : "  + score2 + "\n3등 : " + name3 + " 평균점수 : " + score3);
+				System.out.println("1등 : " + name1 + ", 평균점수 : " + score1 +"\n2등 : "  + name2 + ", 평균점수 : "  + score2 + "\n3등 : " + name3 + ", 평균점수 : " + score3);
 			} else {
-				System.out.println("1등 : " + name1 + " 평균점수 : " + score1 +"\n2등 : "  + name3 + " 평균점수 : "  + score3 + "\n3등 : " + name2 + " 평균점수 : " + score2);	
+				System.out.println("1등 : " + name1 + ", 평균점수 : " + score1 +"\n2등 : "  + name3 + ", 평균점수 : "  + score3 + "\n3등 : " + name2 + ", 평균점수 : " + score2);	
 			}
 			
 		} else if (score2 > score1 && score2 > score3) {
 			if(score1 > score3){
-				System.out.println("1등 : " + name2 + " 평균점수 : " + score2 +"\n2등 : "  + name1 + " 평균점수 : "  + score1 + "\n3등 : " + name3 + " 평균점수 : " + score3);
+				System.out.println("1등 : " + name2 + ", 평균점수 : " + score2 +"\n2등 : "  + name1 + ", 평균점수 : "  + score1 + "\n3등 : " + name3 + ", 평균점수 : " + score3);
 			} else {
-				System.out.println("1등 : " + name2 + " 평균점수 : " + score2 +"\n2등 : "  + name3 + " 평균점수 : "  + score3 + "\n3등 : " + name1 + " 평균점수 : " + score1);	
+				System.out.println("1등 : " + name2 + ", 평균점수 : " + score2 +"\n2등 : "  + name3 + ", 평균점수 : "  + score3 + "\n3등 : " + name1 + ", 평균점수 : " + score1);	
 			}
 			
 		} else if (score3 > score1 && score3 > score1) {
 			if(score1 > score2){
-				System.out.println("1등 : " + name3 + " 평균점수 : " + score3 +"\n2등 : "  + name1+ " 평균점수 : "  + score1 + "\n3등 : " + name3 + " 평균점수 : " + score3);
+				System.out.println("1등 : " + name3 + ", 평균점수 : " + score3 +"\n2등 : "  + name1 + ", 평균점수 : "  + score1 + "\n3등 : " + name2 + ", 평균점수 : " + score2);
 			} else {
-				System.out.println("1등 : " + name3 + " 평균점수 : " + score3 +"\n2등 : "  + name2 + " 평균점수 : "  + score2 + "\n3등 : " + name1+ " 평균점수 : " + score1);	
+				System.out.println("1등 : " + name3 + ", 평균점수 : " + score3 +"\n2등 : "  + name2 + ", 평균점수 : "  + score2 + "\n3등 : " + name1 + ", 평균점수 : " + score1);	
 			}
 		}
 	}
