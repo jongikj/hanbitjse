@@ -29,10 +29,12 @@ public class Calc3 {
 		System.out.println("첫번째 숫자");
 		x = scanner.nextInt();
 		
-		System.out.println("+, -, *, /, %");
+		System.out.println("두번째 숫자");
+		y = scanner.nextInt();
+		
+		System.out.print("+, -, *, /, %");
 		opc = scanner.next();
-		
-		
+			
 		switch (opc) {
 		case "+":
 			sum = x + y;
@@ -59,8 +61,6 @@ public class Calc3 {
 			return;
 		}
 		
-		System.out.println("두번째 숫자");
-		y = scanner.nextInt();
 		
 		System.out.println(x + cal + y + " = " + sum);
 	}
