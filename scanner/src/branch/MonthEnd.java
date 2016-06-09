@@ -20,49 +20,21 @@ public class MonthEnd {
 	 * 잘못된 입력 값입니다. 라고 뜬다.
 	 * */
 	public static void main(String[] args) {
+		//init
 		int month = 0, endDay = 0;
 		Scanner scanner = new Scanner(System.in);
-	
+		//op
 		for(;;){
 		System.out.println("월을 입력하세요.");		
-		month = scanner.nextInt();
-
-		switch (month) {
-		case 1:
+		switch (month = scanner.nextInt()) {
+		case 1:case 3:case 5:case 7:case 8:case 10:case 12:
 			endDay = 31;
+			break;
+		case 4:case 6:case 9:case 11:
+			endDay = 30;
 			break;
 		case 2:
 			endDay = 29;
-			break;
-		case 3:
-			endDay = 31;
-			break;
-		case 4:
-			endDay = 30;
-			break;
-		case 5:
-			endDay = 31;
-			break;
-		case 6:
-			endDay = 30;
-			break;
-		case 7:
-			endDay = 31;
-			break;
-		case 8:
-			endDay = 31;
-			break;
-		case 9:
-			endDay = 30;
-			break;
-		case 10:
-			endDay = 31;
-			break;
-		case 11:
-			endDay = 30;
-			break;
-		case 12:
-			endDay = 31;
 			break;
 		default:
 			System.out.println("1에서 12까지만 입력해주세요.");
