@@ -61,7 +61,6 @@ public class Calc3 {
 			return;
 		}
 		
-		
 		System.out.println(x + cal + y + " = " + sum);
 	}
 }
