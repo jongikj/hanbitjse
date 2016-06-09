@@ -24,16 +24,22 @@ public class Num1 {
 	 * */
 	public static void main(String[] args) {
 		String name1 = "", name2 = "", name3 = "";
-		int score1 = 0, score2 = 0, score3 = 0;
+		int score1 = 0, score2 = 0, score3 = 0, num1 = 0, num2 = 0, num3 = 0;
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("첫번째 학생 이름은?");
-		name1 = scanner.next();
+		System.out.println("첫번째 점수는?");
+		score1 = scanner.nextInt();
+		System.out.println("두번째 점수는?");
+		score2 = scanner.nextInt();
+		System.out.println("세번째 점수는?");
+		score3 = scanner.nextInt();
 		
-		System.out.println("두번째 학생 이름은?");
-		name2 = scanner.next();
-		
-		System.out.println("세번째 학생 이름은?");
-		name3 = scanner.next();
+		if(score1>score2 && score1>score3){
+			if(score2>score3){
+				
+			}
+			
+			
+		}
 	}
 }
