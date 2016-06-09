@@ -8,6 +8,7 @@ import java.util.Scanner;
  * @file :Num1.java
  * @story :
  */
+
 public class Num1 {
 	/**
 	 * 저희 반은 학생 수가 3명입니다.
