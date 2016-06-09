@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @file   :Avg.java
  * @story  :
 */
-public class Avg2 {
+public class Avg3 {
 	/**
 	 * 클라이언트에서 프로그램 개발 요청이 왔습니다.
 	 * 이름과 국, 영, 수 세과목 점수를 입력받아서
@@ -22,11 +22,12 @@ public class Avg2 {
 	 * 50점 이상이면 E
 	 * 50점 미만이면 F 입니다 라고
 	 * 출력되게 해주세요
+	 * 단, switch-case 문을 이용.
 	 * */
 	public static void main(String[] args) {
 		//-----------변수 선언부, 초기화(init)-------------
 		String name = "", result = "";
-		int kor = 0, eng = 0, math = 0, total = 0, avg = 0;
+		int kor = 0, eng = 0, math = 0, total = 0, avg = 0, avgD = 0;
 		Scanner scanner = new Scanner(System.in);
 		//------------------연산부(알고리즘)--------------------
 		System.out.println("이름을 입력하세요.");
@@ -53,17 +54,23 @@ public class Avg2 {
 		total = kor + eng + math;
 		avg = total / 3;
 		
-		if (avg >= 90) {
+		switch (avg/10) {
+		case 10: case 9:
 			result = "A";
-		} else if (avg >= 80) {
+			break;
+		case 8:
 			result = "B";
-		} else if (avg >= 70) {
+			break;
+		case 7:
 			result = "C";
-		} else if (avg >= 60) {
+			break;
+		case 6:
 			result = "D";
-		} else if (avg >= 50) {
+			break;
+		case 5:
 			result = "E";
-		} else {
+			break;
+		default :
 			result = "F";
 		}
 		//---------------------출력부(콘솔)------------------------
