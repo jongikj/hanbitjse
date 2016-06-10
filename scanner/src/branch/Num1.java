@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 public class Num1 {
 	/**
-	 * 
 	 * 저희 반은 학생 수가 3명입니다.
 	 * 학생의 평균 점수는 0~100점 사이입니다.
 	 * 3명의 평균점수를 입력하면
@@ -20,7 +19,6 @@ public class Num1 {
 	 * 3등 김구, 평균점수 **점
 	 * 이렇게 나오도록 해주세요. 동점은 없습니다.
 	 * 단, 학생이름은 스캐너로 입력받습니다.
-	 * 
 	 * */
 	public static void main(String[] args) {
 		String name1 = "", name2 = "", name3 = "";
