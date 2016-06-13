@@ -42,7 +42,7 @@ public class MonthEnd2 {
 		System.out.println("월을 입력하세요 [ex)2]");
 		month = scanner.nextInt();
 		if (month > 12 || month < 1){
-			System.out.println("0에서 12까지만");
+			System.out.println("1에서 12까지만");
 			return;
 		}
 		
@@ -54,6 +54,7 @@ public class MonthEnd2 {
 			endDay = 30;
 			break;
 		case 2:
+			// ()?:; 삼항연산자
 			endDay = year % 100 != 0 && year % 4 == 0 || year % 400 == 0 ? 29 : 28;
 			break;
 		default:
@@ -61,6 +62,6 @@ public class MonthEnd2 {
 			return; 
 		}
 		
-		System.out.println(year + "년 " + month + "월은 " + endDay + "일까지 있습니다.");
+		System.out.printf("%d%s %d%s %d%s", year, "년", month, "월", endDay, "일");
 	}
 }
