@@ -46,7 +46,7 @@ public class MonthEnd2 {
 			endDay = 30;
 			break;
 		case 2:
-			endDay = (int) ((year % 400 == 0 || year % 4 == 0) ? 29 : 28);
+			endDay = year % 100 != 0 || year % 4 == 0 && year % 400 == 0 ? 29 : 28;
 			break;
 		default:
 			System.out.println("1에서 12까지만 입력해주세요.");
