@@ -50,7 +50,7 @@ public class MonthEnd2 {
 			break;
 		default:
 			System.out.println("1에서 12까지만 입력해주세요.");
-			return;
+			return; 
 		}
 		
 		System.out.println(year + "년 " + month + "월은 " + endDay + "일까지 있습니다.");
