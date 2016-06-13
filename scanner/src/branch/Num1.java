@@ -46,6 +46,7 @@ public class Num1 {
 
 		System.out.print("3번 학생 이름은?");
 		name3 = scanner.next();
+		System.out.print(name3 + "의 점수는?");
 		score3 = scanner.nextInt();
 		if(score3 >= 101 || score3 <= -1){
 			System.out.println("0 ~ 100 중 입력해주세요.");
@@ -72,6 +73,8 @@ public class Num1 {
 			} else {
 				System.out.println("1등 : " + name3 + ", 평균점수 : " + score3 +"\n2등 : "  + name2 + ", 평균점수 : "  + score2 + "\n3등 : " + name1 + ", 평균점수 : " + score1);	
 			}
+		} else {
+			System.out.println("동점은 안됩니다.");
 		}
 	}
 }
