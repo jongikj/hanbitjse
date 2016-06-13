@@ -34,9 +34,17 @@ public class MonthEnd2 {
 		//op
 		System.out.println("년을 입력하세요 [ex)2016]");
 		int year = scanner.nextInt();
+		if (year < 0){
+			System.out.println("음수는 안됩니다.");
+			return;
+		}
 		
 		System.out.println("월을 입력하세요 [ex)2]");
 		month = scanner.nextInt();
+		if (month > 12 || month < 1){
+			System.out.println("0에서 12까지만");
+			return;
+		}
 		
 		switch (month) {
 		case 1:case 3:case 5:case 7:case 8:case 10:case 12:
